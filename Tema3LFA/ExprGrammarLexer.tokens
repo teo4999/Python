@@ -1,0 +1,9 @@
+VAR=1
+UNION=2
+KLEENE=3
+LEFT=4
+RIGHT=5
+'|'=2
+'*'=3
+'('=4
+')'=5

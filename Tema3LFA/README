@@ -1,0 +1,14 @@
+Am creat o clasa principala RegexToNFA care contine metodele necesare pentru transformarea
+unei expresii regulate intr-un automat finit nedeterminist (add_variable, concatenation,
+kleene_star, union). Aceste metode se bazeaza pe modelele prezentate in cursul 5.
+Metoda move_states este folosita pentru a shifta starile si tranzitiile unui automat
+cu un numar dat ca parametru. Aceasta metoda este folosita in functiile mentionate mai sus
+pentru a genera automatele rezultate din aplicarea operatiilor din expresia regulata
+primita ca input.
+Functia print_nfa este folosita pentru a scrie in fisierul de output corespunzator
+structura unui automat finit nedeterminist in conformitate cu cerintele din enunt. 
+Pentru parsarea regexului este folosit ANTLR4, si regulile lexicale si sintactice se gasesc
+in fisierul ExprGrammar.g4. Cu ajutorul acestuia au fost generate fisierele necesare pentru
+parcurgerea expresiei regulate.
+In fisierul ExprGrammarEvalVisitor.py se afla metodele recursive folosite in vizitarea
+arborelui generat de ANTLR4.
